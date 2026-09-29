@@ -19,8 +19,16 @@ sites:
       - css_select: "table" 
   - url: https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html
+    http1_only: true
+    ignore_error: true
+    headers:
+    - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html
+    http1_only: true
+    ignore_error: true
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
+    http1_only: true
+    ignore_error: true
   - url: https://gemmed.ghc-j.com/
     editors:
       # Rotating ad banners (all wrapped in <aside>, plus one bare
