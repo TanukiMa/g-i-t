@@ -8,34 +8,43 @@ sites:
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html
     headers: &ua
     - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    editors:
-      - css_select: "table"
+    editors: &default_editors
+      - css_select: body
+      - css_remove: script, style
+      - html_sanitize
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html
     headers: *ua
     editors:
       - css_select: "table"
+      - html_sanitize
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_05.html
     headers: *ua
     editors:
       - css_select: "table"
+      - html_sanitize
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html
     headers: *ua
     editors:
       - css_select: "table" 
+      - html_sanitize
   - url: https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html
     headers: *ua
+    editors: *default_editors
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html
     http1_only: true
     ignore_error: true
     headers: *ua
+    editors: *default_editors
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html
     http1_only: true
     ignore_error: true
     headers: *ua
+    editors: *default_editors
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
     http1_only: true
     ignore_error: true
     headers: *ua
+    editors: *default_editors
   - url: https://gemmed.ghc-j.com/
     headers: *ua
     editors:
@@ -51,8 +60,10 @@ sites:
           selector: "dl.menusp dd, dl.footlist dd"
   - url: https://www.mhlw.go.jp/stf/new-info/
     headers: *ua
+    editors: *default_editors
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html
     headers: *ua
+    editors: *default_editors
   - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/
     editors:
       - css_select: "table"
@@ -76,6 +87,7 @@ sites:
           replace: "あなたはN人目の訪問者です"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
     headers: *ua
+    editors: *default_editors
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4
     headers: *ua
     editors:
@@ -86,10 +98,13 @@ sites:
       - css_select: "#box_main"
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html
     headers: *ua
+    editors: *default_editors
   - url: https://www.jsir.or.jp/about/guide_line/
     headers: *ua
+    editors: *default_editors
   - url: https://www.naika.or.jp/nintei/
     headers: *ua
+    editors: *default_editors
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3
     headers: *ua
     editors:
@@ -100,10 +115,13 @@ sites:
       - css_remove: script
   - url: https://www.j-circ.or.jp/guideline/guideline-series/
     headers: *ua
+    editors: *default_editors
   - url: https://www.kekkaku.gr.jp/medical_staff/
     headers: *ua
+    editors: *default_editors
   - url: https://jsnm.org/useful/guidelines/
     headers: *ua
+    editors: *default_editors
   - url: https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1
     headers: *ua
     editors:
@@ -125,9 +143,13 @@ sites:
       - css_remove: '#popup, script[id^="gt_widget_script_"], script[src*="gtranslate"]'
   - url: https://www.naika.or.jp/
     headers: *ua
+    editors: *default_editors
   - url: https://www.jssoc.or.jp/
     headers: *ua
+    editors: *default_editors
   - url: https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html
     headers: *ua
+    editors: *default_editors
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/
     headers: *ua
+    editors: *default_editors
