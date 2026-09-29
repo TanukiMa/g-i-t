@@ -121,3 +121,5 @@ sites:
     headers: *ua
   - url: https://www.jssoc.or.jp/
     headers: *ua
+  - url: https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html
+    headers: *ua
