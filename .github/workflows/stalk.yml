@@ -78,7 +78,7 @@ jobs:
       - name: Update change report
         if: steps.changes.outputs.changed == 'true'
         working-directory: tracker
-        run: ./update_report.sh "${{ steps.changes.outputs.sha }}"
+        run: bash update_report.sh "${{ steps.changes.outputs.sha }}"
 
       - name: Commit change report
         if: steps.changes.outputs.changed == 'true'
