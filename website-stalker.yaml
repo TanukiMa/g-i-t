@@ -27,7 +27,6 @@ sites:
     http1_only: true
     ignore_error: true
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
-    name: "自主点検通知（体外診断用医薬品）- PMDA.go.jp"
     http1_only: true
     ignore_error: true
   - url: https://gemmed.ghc-j.com/
@@ -83,7 +82,6 @@ sites:
   - url: https://www.kekkaku.gr.jp/medical_staff/
   - url: https://jsnm.org/useful/guidelines/
   - url: https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1
-    name: "診療ガイドライン／手引き・マニュアル INDEX - 日本耳鼻咽喉科頭頸部外科学会"
     editors:
       - css_select: body
       - html_prettify
