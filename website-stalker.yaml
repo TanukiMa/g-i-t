@@ -46,10 +46,18 @@ sites:
           replace: "あなたはN人目の訪問者です"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4
+    editors:
+      # The <head> flip-flops between requests (title with/without "重要な",
+      # a main_css <link> that randomly appears/disappears), which made
+      # every fetch look like a change even though the news list itself
+      # hadn't. Track only the actual content container.
+      - css_select: "#box_main"
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html
   - url: https://www.jsir.or.jp/about/guide_line/
   - url: https://www.naika.or.jp/nintei/
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3
+    editors:
+      - css_select: "#box_main"
   - url: https://www.radiology.jp/guideline
   - url: https://www.j-circ.or.jp/guideline/guideline-series/
   - url: https://www.kekkaku.gr.jp/medical_staff/
