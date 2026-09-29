@@ -73,9 +73,9 @@
 </main>
 <script src="https://cdn.jsdelivr.net/npm/marked@13.0.3/lib/marked.umd.min.js"></script>
 <script>
-  fetch("report/CHANGELOG.md", { cache: "no-store" })
+  fetch("CHANGELOG.md", { cache: "no-store" })
     .then((res) => {
-      if (!res.ok) throw new Error("report/CHANGELOG.md: " + res.status);
+      if (!res.ok) throw new Error("CHANGELOG.md: " + res.status);
       return res.text();
     })
     .then((markdown) => {

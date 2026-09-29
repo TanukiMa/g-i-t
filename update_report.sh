@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
-# Appends a dated entry to report/CHANGELOG.md describing the site changes
+# Appends a dated entry to CHANGELOG.md describing the site changes
 # committed as $1 (a commit sha created by `website-stalker run --all --commit`).
+#
+# CHANGELOG.md lives at the repo root (not in a subdirectory) on purpose:
+# website-stalker's cleanup deletes any file inside a non-dot top-level
+# directory that isn't one of its tracked site files, so a "report/" folder
+# would get wiped out on the next run.
 set -euo pipefail
 
 sha="$1"
 repo_root="$(git rev-parse --show-toplevel)"
-report_file="$repo_root/report/CHANGELOG.md"
+report_file="$repo_root/CHANGELOG.md"
 
 short_sha="${sha:0:7}"
 timestamp="$(date -u +'%Y-%m-%d %H:%M UTC')"

@@ -55,8 +55,12 @@ jobs:
         working-directory: tracker
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      # continue-on-error: a single flaky site (timeout, temporary 5xx, ...)
+      # makes website-stalker exit non-zero even though it already committed
+      # every site that DID succeed. Don't let that abort the report/push steps.
       - name: Run website-stalker
         working-directory: tracker
+        continue-on-error: true
         run: ../website-stalker-src/target/release/website-stalker run --all --commit
 
       - name: Detect changes
@@ -74,13 +78,13 @@ jobs:
       - name: Update change report
         if: steps.changes.outputs.changed == 'true'
         working-directory: tracker
-        run: ./scripts/update_report.sh "${{ steps.changes.outputs.sha }}"
+        run: ./update_report.sh "${{ steps.changes.outputs.sha }}"
 
       - name: Commit change report
         if: steps.changes.outputs.changed == 'true'
         working-directory: tracker
         run: |
-          git add report/CHANGELOG.md
+          git add CHANGELOG.md
           git commit -m "docs(report): update change report for ${{ steps.changes.outputs.sha }}"
 
       - name: Push
@@ -107,9 +111,9 @@ jobs:
 
       - name: Build pages site
         run: |
-          mkdir -p _site/report
-          cp pages/index.html _site/index.html
-          cp report/CHANGELOG.md _site/report/CHANGELOG.md
+          mkdir -p _site
+          cp report-page.html _site/index.html
+          cp CHANGELOG.md _site/CHANGELOG.md
 
       - uses: actions/upload-pages-artifact@v4
         with:
