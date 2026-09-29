@@ -22,6 +22,17 @@ sites:
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
   - url: https://gemmed.ghc-j.com/
+    editors:
+      # Rotating ad banners (all wrapped in <aside>, plus one bare
+      # .header-banner div up top) swap images/links on every request,
+      # which made every fetch look like a change regardless of whether
+      # any article actually changed.
+      - css_remove: "aside, .header-banner"
+      # The category <dd> list (mobile menu + footer) is also rendered
+      # in a random order on every request. Sort it so the order is
+      # deterministic instead of triggering a false change each time.
+      - css_sort:
+          selector: "dl.menusp dd, dl.footlist dd"
   - url: https://www.mhlw.go.jp/stf/new-info/
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html
   - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/
