@@ -153,3 +153,6 @@ sites:
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/
     headers: *ua
     editors: *default_editors
+  - url: https://www.jsir.or.jp/about/guide_line/
+    headers: *ua
+    editors: *default_editors
