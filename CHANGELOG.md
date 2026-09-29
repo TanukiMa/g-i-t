@@ -6,6 +6,15 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-09-29 22:43 JST — 4 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://jrs-gl.radiology.jp/](https://jrs-gl.radiology.jp/)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html)
+
+コミット: [`6d264fa`](https://github.com/TanukiMa/g-i-t/commit/6d264fae1a4580b511f840848af3acb5349c8499)
+
 ## 2026-09-29 18:41 JST — 3 件のサイトが変更
 
 - [https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1](https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1)
