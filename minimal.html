@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>g医t</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfcfa;
+    --fg: #2a2724;
+    --muted: #8a8378;
+    --border: #e7e2da;
+    --link: #2a2724;
+    --code-bg: transparent;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171512;
+      --fg: #eae6df;
+      --muted: #8f897d;
+      --border: #322e28;
+      --link: #eae6df;
+      --code-bg: transparent;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding-block: 3rem;
+    font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif;
+    line-height: 1.9;
+  }
+  main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+  nav.style-switch {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+  }
+  nav.style-switch a {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+  }
+  nav.style-switch a:hover { color: var(--fg); }
+  nav.style-switch a[aria-current="page"] {
+    color: var(--fg);
+    border-bottom: 1px solid var(--fg);
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  header h1 {
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+    font-size: 0.85em;
+  }
+  #status {
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+  }
+  #content { word-break: break-word; }
+  .entry {
+    display: block;
+    padding-block: 1.75rem;
+    border-top: 1px solid var(--border);
+  }
+  .entry:first-of-type { border-top: 1px solid var(--border); }
+  .entry--maintenance { color: var(--muted); }
+  .entry h2 {
+    font-size: 0.95rem;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--muted);
+    margin: 0 0 1rem;
+    border: none;
+    padding: 0;
+  }
+  .entry ul {
+    list-style: none;
+    margin: 0 0 0.9rem;
+    padding: 0;
+  }
+  .entry li {
+    display: inline;
+  }
+  .entry li:not(:last-child)::after {
+    content: " · ";
+    color: var(--muted);
+  }
+  .site-chip {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .site-chip:hover { border-bottom-color: var(--fg); }
+  .entry p {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", sans-serif;
+    font-size: 0.78em;
+    color: var(--muted);
+  }
+  .commit-badge {
+    color: var(--muted);
+    text-decoration: none;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .commit-badge:hover { color: var(--fg); }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <nav class="style-switch" aria-label="表示スタイル切り替え">
+    <a href="index.html">GitHub風</a>
+    <a href="dashboard.html">ダッシュボード</a>
+    <a href="minimal.html" aria-current="page">ミニマル</a>
+  </nav>
+  <header>
+    <h1>g医t — 変更履歴</h1>
+    <p id="status">読み込み中…</p>
+  </header>
+  <div id="content"></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/marked@13.0.3/lib/marked.umd.min.js"></script>
+<script src="report.js"></script>
+<script>
+  reportPage.loadReport({
+    onContent: () => {
+      document.getElementById("status").textContent =
+        "生成: " + new Date().toISOString();
+    },
+    onError: (err) => {
+      document.getElementById("status").textContent =
+        "レポートの読み込みに失敗しました: " + err.message;
+    },
+  });
+</script>
+</body>
+</html>
