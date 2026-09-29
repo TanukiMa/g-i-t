@@ -1,0 +1,109 @@
+name: Stalk websites
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: stalk-websites
+  cancel-in-progress: false
+
+jobs:
+  stalk:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.changes.outputs.changed }}
+    steps:
+      - name: Checkout tracker repo
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Checkout website-stalker source
+        uses: actions/checkout@v7
+        with:
+          repository: TanukiMa/website-stalker
+          path: website-stalker-src
+
+      - uses: dtolnay/rust-toolchain@stable
+        id: rust
+
+      - uses: actions/cache@v6
+        with:
+          key: website-stalker-bin-${{ runner.os }}-${{ steps.rust.outputs.cachekey }}-${{ hashFiles('website-stalker-src/Cargo.lock') }}
+          path: website-stalker-src/target/
+
+      - name: Build website-stalker
+        working-directory: website-stalker-src
+        run: cargo build --release --locked
+
+      - name: Configure git identity
+        run: |
+          git config user.name "website-stalker-bot"
+          git config user.email "website-stalker-bot@users.noreply.github.com"
+
+      - name: Record commit before stalking
+        id: before
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Run website-stalker
+        run: ./website-stalker-src/target/release/website-stalker run --all --commit
+
+      - name: Detect changes
+        id: changes
+        run: |
+          after="$(git rev-parse HEAD)"
+          if [ "${{ steps.before.outputs.sha }}" = "$after" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "sha=$after" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update change report
+        if: steps.changes.outputs.changed == 'true'
+        run: ./scripts/update_report.sh "${{ steps.changes.outputs.sha }}"
+
+      - name: Commit change report
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git add report/CHANGELOG.md
+          git commit -m "docs(report): update change report for ${{ steps.changes.outputs.sha }}"
+
+      - name: Push
+        if: steps.changes.outputs.changed == 'true'
+        run: git push
+
+  pages:
+    needs: stalk
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - uses: actions/configure-pages@v5
+
+      - name: Build pages site
+        run: |
+          mkdir -p _site/report
+          cp pages/index.html _site/index.html
+          cp report/CHANGELOG.md _site/report/CHANGELOG.md
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

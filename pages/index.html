@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>website-stalker 変更履歴レポート</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --border: #dddddd;
+    --link: #0969da;
+    --code-bg: #f0f0f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --border: #30363d;
+      --link: #58a6ff;
+      --code-bg: #161b22;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding-block: 2rem;
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.7;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-inline: 16px;
+  }
+  header {
+    margin-bottom: 2rem;
+  }
+  header p {
+    color: var(--muted);
+  }
+  h1 { font-size: 1.5rem; }
+  h2 {
+    font-size: 1.1rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.25rem;
+    margin-top: 1.75rem;
+  }
+  a { color: var(--link); }
+  code {
+    background: var(--code-bg);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  #content {
+    word-break: break-word;
+  }
+  #status { color: var(--muted); font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>website-stalker 変更履歴レポート</h1>
+    <p id="status">読み込み中…</p>
+  </header>
+  <div id="content"></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/marked@13.0.3/lib/marked.umd.min.js"></script>
+<script>
+  fetch("report/CHANGELOG.md", { cache: "no-store" })
+    .then((res) => {
+      if (!res.ok) throw new Error("report/CHANGELOG.md: " + res.status);
+      return res.text();
+    })
+    .then((markdown) => {
+      document.getElementById("content").innerHTML = marked.parse(markdown);
+      document.getElementById("status").textContent =
+        "生成: " + new Date().toISOString();
+    })
+    .catch((err) => {
+      document.getElementById("status").textContent =
+        "レポートの読み込みに失敗しました: " + err.message;
+    });
+</script>
+</body>
+</html>
