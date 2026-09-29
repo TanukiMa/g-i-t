@@ -111,6 +111,10 @@ sites:
       - html_prettify
   - url: https://jrs-gl.radiology.jp/
     headers: *ua
+    editors:
+      - css_select: script
+      - css_remove: script, style
+      - html_prettify
   - url: https://www.jami.jp/
     headers: *ua
     editors:
