@@ -1,6 +1,6 @@
-# website-stalker-tracker
+# g医t
 
-[website-stalker](https://github.com/TanukiMa/website-stalker) を GitHub Actions 上で定期実行し、日本の医療・薬事系サイトの変更を追跡するリポジトリです。
+GitHub Actions 上で定期実行し、日本の医療・薬事系サイトの変更を追跡するリポジトリです。
 
 ## 仕組み
 
