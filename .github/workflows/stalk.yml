@@ -17,9 +17,13 @@ jobs:
     outputs:
       changed: ${{ steps.changes.outputs.changed }}
     steps:
+      # Checked out as siblings (not nested) so the tool's source checkout
+      # never shows up as untracked content in the tracker repo - website-stalker
+      # refuses --commit in an "unclean" repository.
       - name: Checkout tracker repo
         uses: actions/checkout@v7
         with:
+          path: tracker
           fetch-depth: 0
 
       - name: Checkout website-stalker source
@@ -41,19 +45,23 @@ jobs:
         run: cargo build --release --locked
 
       - name: Configure git identity
+        working-directory: tracker
         run: |
           git config user.name "website-stalker-bot"
           git config user.email "website-stalker-bot@users.noreply.github.com"
 
       - name: Record commit before stalking
         id: before
+        working-directory: tracker
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Run website-stalker
-        run: ./website-stalker-src/target/release/website-stalker run --all --commit
+        working-directory: tracker
+        run: ../website-stalker-src/target/release/website-stalker run --all --commit
 
       - name: Detect changes
         id: changes
+        working-directory: tracker
         run: |
           after="$(git rev-parse HEAD)"
           if [ "${{ steps.before.outputs.sha }}" = "$after" ]; then
@@ -65,16 +73,19 @@ jobs:
 
       - name: Update change report
         if: steps.changes.outputs.changed == 'true'
+        working-directory: tracker
         run: ./scripts/update_report.sh "${{ steps.changes.outputs.sha }}"
 
       - name: Commit change report
         if: steps.changes.outputs.changed == 'true'
+        working-directory: tracker
         run: |
           git add report/CHANGELOG.md
           git commit -m "docs(report): update change report for ${{ steps.changes.outputs.sha }}"
 
       - name: Push
         if: steps.changes.outputs.changed == 'true'
+        working-directory: tracker
         run: git push
 
   pages:
