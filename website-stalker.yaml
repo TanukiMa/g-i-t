@@ -6,15 +6,20 @@
 from: matanuki@dr.com
 sites:
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html
+    headers: &ua
+    - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     editors:
       - css_select: "table"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html
+    headers: *ua
     editors:
       - css_select: "table"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_05.html
+    headers: *ua
     editors:
       - css_select: "table"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html
+    headers: *ua
     editors:
       - css_select: "table" 
   - url: https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html
