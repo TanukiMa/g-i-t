@@ -4,6 +4,13 @@
 このファイルは `.github/workflows/stalk.yml` によって自動更新されます。
 
 <!-- ENTRIES:START -->
+## 2026-09-29 05:36 UTC — 2 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3)
+
+コミット: [`3656f56`](https://github.com/TanukiMa/g-i-t/commit/3656f56b351b42a9c8a3af65977fcee10759a819)
+
 ## 2026-09-29 05:22 UTC — 3 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
