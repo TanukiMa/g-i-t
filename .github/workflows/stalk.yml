@@ -2,7 +2,7 @@ name: Stalk websites
 
 on:
   schedule:
-    - cron: "55 */6 * * *"
+    - cron: "55 0-9,23 * * *"
   workflow_dispatch:
 
 concurrency:
