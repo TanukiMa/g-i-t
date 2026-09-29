@@ -123,3 +123,5 @@ sites:
     headers: *ua
   - url: https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html
     headers: *ua
+  - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/
+    headers: *ua
