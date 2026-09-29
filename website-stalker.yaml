@@ -96,6 +96,8 @@ sites:
       - css_select: "#box_main"
   - url: https://www.radiology.jp/guideline
     headers: *ua
+    editors:
+      - css_remove: script
   - url: https://www.j-circ.or.jp/guideline/guideline-series/
     headers: *ua
   - url: https://www.kekkaku.gr.jp/medical_staff/
