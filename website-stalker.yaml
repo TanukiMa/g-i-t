@@ -83,3 +83,4 @@ sites:
       # every fetch look like a change with nothing actually different.
       - css_remove: '#popup, script[id^="gt_widget_script_"], script[src*="gtranslate"]'
   - url: https://www.naika.or.jp/
+  - url: https://www.jssoc.or.jp/
