@@ -4,6 +4,15 @@
 このファイルは `.github/workflows/stalk.yml` によって自動更新されます。
 
 <!-- ENTRIES:START -->
+## 2026-09-29 17:39 JST — 4 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1](https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`a366c71`](https://github.com/TanukiMa/g-i-t/commit/a366c714febc5d09b908ca7412eb0c70623be239)
+
 ## 2026-09-29 15:52 JST — 1 件のサイトが変更
 
 - [https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1](https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1)
