@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://github.com/EdJoPaTo/website-stalker/releases/latest/download/website-stalker-schema.json
+#
+# Tracked sites: Japanese medical / healthcare regulatory pages.
+# Run via `website-stalker run --all --commit` (see .github/workflows/stalk.yml).
+---
+from: matanuki@dr.com
+sites:
+  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html
+    editors:
+      - css_select: "table"
+  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html
+    editors:
+      - css_select: "table"
+  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_05.html
+    editors:
+      - css_select: "table"
+  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html
+    editors:
+      - css_select: "table" 
+  - url: https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html
+  - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html
+  - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html
+  - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
+  - url: https://gemmed.ghc-j.com/
+  - url: https://www.mhlw.go.jp/stf/new-info/
+  - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html
+  - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/
+    editors:
+      - css_select: "table"
+      # This site embeds a per-request session id (;jsessionid=...) in every
+      # link, so the raw HTML never matches byte-for-byte between two fetches.
+      # Strip it so only real content changes are detected.
+      - regex_replace:
+          pattern: ';jsessionid=[0-9A-Fa-f]{32}'
+          replace: ""
+  - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/
+    editors:
+      # Same per-request session id as above.
+      - regex_replace:
+          pattern: ';jsessionid=[0-9A-Fa-f]{32}'
+          replace: ""
+      # This page also shows a live visitor counter ("あなたは12345人目の訪問者です")
+      # that increments on every fetch. Normalize it away too.
+      - regex_replace:
+          pattern: 'あなたは[0-9]+人目の訪問者です'
+          replace: "あなたはN人目の訪問者です"
+  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
+  - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4
+  - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html
+  - url: https://www.jsir.or.jp/about/guide_line/
+  - url: https://www.naika.or.jp/nintei/
+  - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3
+  - url: https://www.radiology.jp/guideline
+  - url: https://www.j-circ.or.jp/guideline/guideline-series/
+  - url: https://www.kekkaku.gr.jp/medical_staff/
+  - url: https://jsnm.org/useful/guidelines/
+  - url: https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1
+  - url: https://jrs-gl.radiology.jp/
