@@ -10,6 +10,6 @@
 - [https://www.j-circ.or.jp/guideline/guideline-series/](https://www.j-circ.or.jp/guideline/guideline-series/)
 - [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
 
-コミット: [`64b4eae`](https://github.com/TanukiMa/website-stalker-tracker/commit/64b4eae410f7f128b22a91ba28f3b8c8b0f4d909)
+コミット: [`64b4eae`](https://github.com/TanukiMa/g-i-t/commit/64b4eae410f7f128b22a91ba28f3b8c8b0f4d909)
 
 <!-- ENTRIES:END -->

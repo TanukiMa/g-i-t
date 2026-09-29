@@ -10,9 +10,12 @@
     --bg: #ffffff;
     --fg: #1a1a1a;
     --muted: #666666;
-    --border: #dddddd;
+    --border: #d0d7de;
     --link: #0969da;
-    --code-bg: #f0f0f0;
+    --code-bg: #f6f8fa;
+    --chip-bg: #f6f8fa;
+    --accent: #1a7f37;
+    --card-bg: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -22,8 +25,12 @@
       --border: #30363d;
       --link: #58a6ff;
       --code-bg: #161b22;
+      --chip-bg: #161b22;
+      --accent: #3fb950;
+      --card-bg: #0d1117;
     }
   }
+  * { box-sizing: border-box; }
   body {
     background: var(--bg);
     color: var(--fg);
@@ -37,56 +44,126 @@
     margin: 0 auto;
     padding-inline: 16px;
   }
+  nav.style-switch {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+  nav.style-switch a {
+    font-size: 0.8rem;
+    padding: 0.3em 0.8em;
+    border-radius: 2em;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    text-decoration: none;
+  }
+  nav.style-switch a:hover { color: var(--fg); border-color: var(--fg); }
+  nav.style-switch a[aria-current="page"] {
+    background: var(--fg);
+    color: var(--bg);
+    border-color: var(--fg);
+    font-weight: 600;
+  }
   header {
     margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.25rem;
   }
-  header p {
-    color: var(--muted);
+  header h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  header p { color: var(--muted); margin: 0; }
+  #status { color: var(--muted); font-size: 0.85em; }
+  #content { word-break: break-word; }
+  .entry {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
   }
-  h1 { font-size: 1.5rem; }
-  h2 {
-    font-size: 1.1rem;
-    border-top: 1px solid var(--border);
-    padding-top: 1.25rem;
-    margin-top: 1.75rem;
+  .entry--maintenance {
+    border-left-color: var(--border);
+    opacity: 0.65;
   }
-  a { color: var(--link); }
-  code {
+  .entry h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+    border: none;
+    padding: 0;
+  }
+  .entry ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 0.75rem;
+    padding: 0;
+  }
+  .entry li { margin: 0; }
+  .site-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: 2em;
+    padding: 0.25em 0.8em;
+    font-size: 0.85em;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .site-chip::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+  .site-chip:hover { border-color: var(--link); color: var(--link); }
+  .entry p { margin: 0; font-size: 0.85em; }
+  .commit-badge {
+    display: inline-block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     background: var(--code-bg);
-    padding: 0.1em 0.35em;
-    border-radius: 4px;
-    font-size: 0.9em;
+    border: 1px solid var(--border);
+    border-radius: 2em;
+    padding: 0.1em 0.6em;
+    text-decoration: none;
+    color: var(--fg);
   }
-  #content {
-    word-break: break-word;
-  }
-  #status { color: var(--muted); font-size: 0.9em; }
+  .commit-badge:hover { color: var(--link); border-color: var(--link); }
+  a { color: var(--link); }
 </style>
 </head>
 <body>
 <main>
+  <nav class="style-switch" aria-label="表示スタイル切り替え">
+    <a href="index.html" aria-current="page">GitHub風</a>
+    <a href="dashboard.html">ダッシュボード</a>
+    <a href="minimal.html">ミニマル</a>
+  </nav>
   <header>
-    <h1>website-stalker 変更履歴レポート</h1>
+    <h1>g医t 変更履歴レポート</h1>
     <p id="status">読み込み中…</p>
   </header>
   <div id="content"></div>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/marked@13.0.3/lib/marked.umd.min.js"></script>
+<script src="report.js"></script>
 <script>
-  fetch("CHANGELOG.md", { cache: "no-store" })
-    .then((res) => {
-      if (!res.ok) throw new Error("CHANGELOG.md: " + res.status);
-      return res.text();
-    })
-    .then((markdown) => {
-      document.getElementById("content").innerHTML = marked.parse(markdown);
+  reportPage.loadReport({
+    onContent: () => {
       document.getElementById("status").textContent =
         "生成: " + new Date().toISOString();
-    })
-    .catch((err) => {
+    },
+    onError: (err) => {
       document.getElementById("status").textContent =
         "レポートの読み込みに失敗しました: " + err.message;
-    });
+    },
+  });
 </script>
 </body>
 </html>

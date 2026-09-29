@@ -35,10 +35,15 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         id: rust
 
-      - uses: actions/cache@v6
+      # Caches ~/.cargo/registry, ~/.cargo/git and target/ together, keyed on
+      # Cargo.lock. Unlike a plain actions/cache on target/, this survives the
+      # fresh checkout's reset mtimes (it fixes them up on restore), so an
+      # unchanged Cargo.lock gives a real incremental build instead of a full
+      # rebuild every 6h.
+      - uses: Swatinem/rust-cache@v2
         with:
-          key: website-stalker-bin-${{ runner.os }}-${{ steps.rust.outputs.cachekey }}-${{ hashFiles('website-stalker-src/Cargo.lock') }}
-          path: website-stalker-src/target/
+          workspaces: website-stalker-src
+          shared-key: website-stalker-bin
 
       - name: Build website-stalker
         working-directory: website-stalker-src
@@ -112,7 +117,7 @@ jobs:
       - name: Build pages site
         run: |
           mkdir -p _site
-          cp report-page.html _site/index.html
+          cp index.html dashboard.html minimal.html report.js _site/
           cp CHANGELOG.md _site/CHANGELOG.md
 
       - uses: actions/upload-pages-artifact@v4
