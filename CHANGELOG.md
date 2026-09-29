@@ -4,6 +4,16 @@
 このファイルは `.github/workflows/stalk.yml` によって自動更新されます。
 
 <!-- ENTRIES:START -->
+## 2026-09-29 14:58 JST — 5 件のサイトが変更
+
+- [https://www.jami.jp/](https://www.jami.jp/)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+
+コミット: [`6b5d102`](https://github.com/TanukiMa/g-i-t/commit/6b5d102a9336f62b102cef95e22c26c0233267b7)
+
 ## 2026-09-29 05:36 UTC — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
