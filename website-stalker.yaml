@@ -27,6 +27,7 @@ sites:
     http1_only: true
     ignore_error: true
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
+    name: "自主点検通知（体外診断用医薬品）- PMDA.go.jp"
     http1_only: true
     ignore_error: true
   - url: https://gemmed.ghc-j.com/
