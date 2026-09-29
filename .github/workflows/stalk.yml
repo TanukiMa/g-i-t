@@ -114,11 +114,18 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
+      # report.js has no cache-busting in its <script src>, so browsers can
+      # keep serving a stale cached copy after a redeploy (e.g. a function
+      # added to report.js "not existing" in a visitor's browser even
+      # though the deployed file is current). Append the commit sha as a
+      # query string so every content change gets a new URL.
       - name: Build pages site
         run: |
+          sha="$(git rev-parse HEAD)"
           mkdir -p _site
           cp index.html dashboard.html minimal.html report.js _site/
           cp CHANGELOG.md _site/CHANGELOG.md
+          sed -i "s/report\.js\"/report.js?v=${sha}\"/" _site/index.html _site/dashboard.html _site/minimal.html
 
       - uses: actions/upload-pages-artifact@v4
         with:
