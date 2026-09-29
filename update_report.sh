@@ -13,7 +13,10 @@ repo_root="$(git rev-parse --show-toplevel)"
 report_file="$repo_root/CHANGELOG.md"
 
 short_sha="${sha:0:7}"
-timestamp="$(date -u +'%Y-%m-%d %H:%M UTC')"
+# JST has no DST, so a fixed +9h offset from UTC is used instead of a
+# zoneinfo lookup (TZ=Asia/Tokyo), which isn't guaranteed to be installed
+# on every runner.
+timestamp="$(date -u -d '+9 hours' +'%Y-%m-%d %H:%M JST')"
 repo_url="${GITHUB_SERVER_URL:-https://github.com}/${GITHUB_REPOSITORY:-}"
 commit_url="${repo_url}/commit/${sha}"
 

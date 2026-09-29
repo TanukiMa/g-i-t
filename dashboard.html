@@ -187,7 +187,7 @@
     onContent: (content) => {
       reportPage.renderStats(content, document.getElementById("stats"));
       document.getElementById("status").textContent =
-        "生成: " + new Date().toISOString();
+        "生成: " + reportPage.formatJst();
     },
     onError: (err) => {
       document.getElementById("status").textContent =

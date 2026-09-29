@@ -3,6 +3,24 @@
 // per-entry <section class="entry"> cards, turns site links into
 // hostname chips, and tags maintenance-only entries for muted styling.
 (function () {
+  function formatJst(date) {
+    const parts = new Intl.DateTimeFormat("ja-JP", {
+      timeZone: "Asia/Tokyo",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    })
+      .formatToParts(date || new Date())
+      .reduce((acc, part) => {
+        acc[part.type] = part.value;
+        return acc;
+      }, {});
+    return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute} JST`;
+  }
+
   function hostnameOf(url) {
     try {
       return new URL(url).hostname.replace(/^www\./, "");
@@ -93,5 +111,12 @@
       });
   }
 
-  window.reportPage = { hostnameOf, enhance, computeStats, renderStats, loadReport };
+  window.reportPage = {
+    hostnameOf,
+    enhance,
+    computeStats,
+    renderStats,
+    loadReport,
+    formatJst,
+  };
 })();
