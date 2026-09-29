@@ -76,4 +76,10 @@ sites:
   - url: https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1
   - url: https://jrs-gl.radiology.jp/
   - url: https://www.jami.jp/
+    editors:
+      # The GTranslate plugin's language-switcher popup (#popup) and its two
+      # <script> tags embed a random widget id that's regenerated on every
+      # request (e.g. gt-wrapper-86024623 -> gt-wrapper-53313029), which made
+      # every fetch look like a change with nothing actually different.
+      - css_remove: '#popup, script[id^="gt_widget_script_"], script[src*="gtranslate"]'
   - url: https://www.naika.or.jp/
