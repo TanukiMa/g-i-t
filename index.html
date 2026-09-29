@@ -136,6 +136,14 @@
   }
   .commit-badge:hover { color: var(--link); border-color: var(--link); }
   a { color: var(--link); }
+  footer.site-footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.25rem;
+    color: var(--muted);
+    font-size: 0.85em;
+  }
+  footer.site-footer p { margin: 0 0 0.5rem; }
 </style>
 </head>
 <body>
@@ -150,6 +158,10 @@
     <p id="status">読み込み中…</p>
   </header>
   <div id="content"></div>
+  <footer class="site-footer">
+    <p>"g医t" is built using <a href="https://github.com/">GitHub</a>, <a href="ihttps://git-scm.com/">Git</a>, <a href="https://github.com/EdJoPaTo/website-stalker">website-stalker</a>(forked by Matanuki version), and more.</p>
+    <p>© 2026 Matanuki、© 2026 MATANUKI.</p>
+  </footer>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/marked@13.0.3/lib/marked.umd.min.js"></script>
 <script src="report.js"></script>
@@ -165,9 +177,5 @@
     },
   });
 </script>
-<hr>
-"g医t" is built using <a href="https://github.com/">GitHub</a>, <a href="ihttps://git-scm.com/">Git</a>, <a href="https://github.com/EdJoPaTo/website-stalker">website-stalker</a>(forked by Matanuki version), and more.
-<hr>
-© 2026 Matanuki、© 2026 MATANUKI.
 </body>
 </html>
