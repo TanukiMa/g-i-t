@@ -23,18 +23,21 @@ sites:
     editors:
       - css_select: "table" 
   - url: https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html
+    headers: *ua
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html
     http1_only: true
     ignore_error: true
-    headers:
-    - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    headers: *ua
   - url: https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html
     http1_only: true
     ignore_error: true
+    headers: *ua
   - url: https://www.pmda.go.jp/safety/info-services/ivd/0008.html
     http1_only: true
     ignore_error: true
+    headers: *ua
   - url: https://gemmed.ghc-j.com/
+    headers: *ua
     editors:
       # Rotating ad banners (all wrapped in <aside>, plus one bare
       # .header-banner div up top) swap images/links on every request,
@@ -47,7 +50,9 @@ sites:
       - css_sort:
           selector: "dl.menusp dd, dl.footlist dd"
   - url: https://www.mhlw.go.jp/stf/new-info/
+    headers: *ua
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html
+    headers: *ua
   - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/
     editors:
       - css_select: "table"
@@ -58,6 +63,7 @@ sites:
           pattern: ';jsessionid=[0-9A-Fa-f]{32}'
           replace: ""
   - url: https://shinryohoshu.mhlw.go.jp/shinryohoshu/
+    headers: *ua
     editors:
       # Same per-request session id as above.
       - regex_replace:
@@ -69,7 +75,9 @@ sites:
           pattern: 'あなたは[0-9]+人目の訪問者です'
           replace: "あなたはN人目の訪問者です"
   - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
+    headers: *ua
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4
+    headers: *ua
     editors:
       # The <head> flip-flops between requests (title with/without "重要な",
       # a main_css <link> that randomly appears/disappears), which made
@@ -77,21 +85,32 @@ sites:
       # hadn't. Track only the actual content container.
       - css_select: "#box_main"
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html
+    headers: *ua
   - url: https://www.jsir.or.jp/about/guide_line/
+    headers: *ua
   - url: https://www.naika.or.jp/nintei/
+    headers: *ua
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=3
+    headers: *ua
     editors:
       - css_select: "#box_main"
   - url: https://www.radiology.jp/guideline
+    headers: *ua
   - url: https://www.j-circ.or.jp/guideline/guideline-series/
+    headers: *ua
   - url: https://www.kekkaku.gr.jp/medical_staff/
+    headers: *ua
   - url: https://jsnm.org/useful/guidelines/
+    headers: *ua
   - url: https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1
+    headers: *ua
     editors:
       - css_select: body
       - html_prettify
   - url: https://jrs-gl.radiology.jp/
+    headers: *ua
   - url: https://www.jami.jp/
+    headers: *ua
     editors:
       # The GTranslate plugin's language-switcher popup (#popup) and its two
       # <script> tags embed a random widget id that's regenerated on every
@@ -99,4 +118,6 @@ sites:
       # every fetch look like a change with nothing actually different.
       - css_remove: '#popup, script[id^="gt_widget_script_"], script[src*="gtranslate"]'
   - url: https://www.naika.or.jp/
+    headers: *ua
   - url: https://www.jssoc.or.jp/
+    headers: *ua
