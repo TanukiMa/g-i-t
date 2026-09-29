@@ -4,6 +4,12 @@
 このファイルは `.github/workflows/stalk.yml` によって自動更新されます。
 
 <!-- ENTRIES:START -->
+## 2026-09-29 15:52 JST — 1 件のサイトが変更
+
+- [https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1](https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1)
+
+コミット: [`31ca8e8`](https://github.com/TanukiMa/g-i-t/commit/31ca8e8781597ade29d0f3dfb2d4ef38c6e8cbcd)
+
 ## 2026-09-29 15:03 JST — 3 件のサイトが変更
 
 - [https://www.jami.jp/](https://www.jami.jp/)
