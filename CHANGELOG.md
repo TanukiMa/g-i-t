@@ -6,6 +6,13 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 01:08 JST — 2 件のサイトが変更
+
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`80d327d`](https://github.com/TanukiMa/g-i-t/commit/80d327da109056434bd06defb2fd68e3bbb5fd94)
+
 ## 2026-09-30 21:24 JST — 22 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
