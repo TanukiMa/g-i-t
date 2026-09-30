@@ -6,6 +6,33 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-09-30 21:24 JST — 22 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://jrs-gl.radiology.jp/](https://jrs-gl.radiology.jp/)
+- [https://jsnm.org/useful/guidelines/](https://jsnm.org/useful/guidelines/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.hpdx.or.jp/](https://www.hpdx.or.jp/)
+- [https://www.j-circ.or.jp/guideline/guideline-series/](https://www.j-circ.or.jp/guideline/guideline-series/)
+- [https://www.jsir.or.jp/about/guide_line/](https://www.jsir.or.jp/about/guide_line/)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.kekkaku.gr.jp/medical_staff/](https://www.kekkaku.gr.jp/medical_staff/)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html)
+- [https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html](https://www.mhlw.go.jp/stf/shingi/0000516275_00006.html)
+- [https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html](https://www.mhlw.go.jp/topics/2026/04/tp20260401-01.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+- [https://www.naika.or.jp/nintei/](https://www.naika.or.jp/nintei/)
+- [https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html](https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0001.html)
+- [https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html](https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html)
+- [https://www.radiology.jp/guideline](https://www.radiology.jp/guideline)
+
+コミット: [`c848545`](https://github.com/TanukiMa/g-i-t/commit/c84854558e32ccb60bf256b01e57dc1a25f0c53f)
+
 ## 2026-09-29 22:43 JST — 4 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
