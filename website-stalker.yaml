@@ -99,9 +99,6 @@ sites:
   - url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html
     headers: *ua
     editors: *default_editors
-  - url: https://www.jsir.or.jp/about/guide_line/
-    headers: *ua
-    editors: *default_editors
   - url: https://www.naika.or.jp/nintei/
     headers: *ua
     editors: *default_editors
