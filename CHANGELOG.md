@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 15:56 JST — 1 件のサイトが変更
+
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/)
+
+コミット: [`0d56579`](https://github.com/TanukiMa/g-i-t/commit/0d5657912f2896a045a27854f98a984f75bfaf99)
+
 ## 2026-10-01 14:56 JST — 2 件のサイトが変更
 
 - [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
