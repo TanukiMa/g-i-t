@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 18:29 JST — 1 件のサイトが変更
+
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`3e53677`](https://github.com/TanukiMa/g-i-t/commit/3e53677ae858e1799a4177755916a9b25348d276)
+
 ## 2026-10-01 17:56 JST — 6 件のサイトが変更
 
 - [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html)
