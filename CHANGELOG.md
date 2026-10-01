@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 12:56 JST — 1 件のサイトが変更
+
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/)
+
+コミット: [`fda25b1`](https://github.com/TanukiMa/g-i-t/commit/fda25b1121ec4866d8c9f25135090aa37627ff64)
+
 ## 2026-10-01 11:56 JST — 1 件のサイトが変更
 
 - [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
