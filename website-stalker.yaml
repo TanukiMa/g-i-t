@@ -153,3 +153,9 @@ sites:
   - url: https://www.jsir.or.jp/about/guide_line/
     headers: *ua
     editors: *default_editors
+  - url: https://www.apheresis-jp.org/
+    headers: *ua
+    editors: *default_editors
+  - url: https://www.jsaweb.jp/
+    headers: *ua
+    editors: *default_editors
