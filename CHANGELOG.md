@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 11:56 JST — 1 件のサイトが変更
+
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+
+コミット: [`f7b327f`](https://github.com/TanukiMa/g-i-t/commit/f7b327fa4d6a6f28d02998527e4cef333f6e0a12)
+
 ## 2026-10-01 11:32 JST — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
