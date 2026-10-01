@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-01 13:55 JST — 1 件のサイトが変更
+
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`ad2137e`](https://github.com/TanukiMa/g-i-t/commit/ad2137ef9717a49cd9f5baebb1fe095531eb09d1)
+
 ## 2026-10-01 12:56 JST — 1 件のサイトが変更
 
 - [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/)
