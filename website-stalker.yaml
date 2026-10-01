@@ -5,24 +5,24 @@
 ---
 from: matanuki@dr.com
 sites:
-  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html
+  - url: https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html
     headers: &ua
     - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     editors: &default_editors
       - css_select: body
       - css_remove: script, style
       - html_sanitize
-  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html
+  - url: https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html
     headers: *ua
     editors:
       - css_select: "table"
       - html_sanitize
-  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_05.html
+  - url: https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_05.html
     headers: *ua
     editors:
       - css_select: "table"
       - html_sanitize
-  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html
+  - url: https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html
     headers: *ua
     editors:
       - css_select: "table" 
@@ -85,7 +85,7 @@ sites:
       - regex_replace:
           pattern: 'あなたは[0-9]+人目の訪問者です'
           replace: "あなたはN人目の訪問者です"
-  - url: https://www.ssk.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
+  - url: https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html
     headers: *ua
     editors: *default_editors
   - url: https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4
