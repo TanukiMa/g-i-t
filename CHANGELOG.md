@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-02 18:04 JST — 1 件のサイトが変更
+
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`b655a02`](https://github.com/TanukiMa/g-i-t/commit/b655a02ccfd6b75955e58a94713133a6991214e7)
+
 ## 2026-10-02 16:56 JST — 4 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
