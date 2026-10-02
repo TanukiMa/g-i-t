@@ -6,6 +6,15 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-02 16:56 JST — 4 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.radiology.jp/guideline](https://www.radiology.jp/guideline)
+
+コミット: [`56ed9c8`](https://github.com/TanukiMa/g-i-t/commit/56ed9c86f58e423af2635af2eb3ce88015b28cb6)
+
 ## 2026-10-02 15:56 JST — 1 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
