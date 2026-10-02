@@ -6,6 +6,15 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-02 14:56 JST — 4 件のサイトが変更
+
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.jsir.or.jp/about/guide_line/](https://www.jsir.or.jp/about/guide_line/)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/)
+
+コミット: [`477df06`](https://github.com/TanukiMa/g-i-t/commit/477df06398db821e3686ec7186578be3a1de8246)
+
 ## 2026-10-02 13:55 JST — 2 件のサイトが変更
 
 - [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
