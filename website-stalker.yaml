@@ -159,3 +159,9 @@ sites:
   - url: https://www.jsaweb.jp/
     headers: *ua
     editors: *default_editors
+  - url: https://www.mhlw.go.jp/stf/newpage_67729.html
+    headers: *ua
+    editors: *default_editors
+  - url: https://www.mhlw.go.jp/
+    headers: *ua
+    editors: *default_editors
