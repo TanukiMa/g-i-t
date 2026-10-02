@@ -6,6 +6,13 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-02 13:55 JST — 2 件のサイトが変更
+
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`0572629`](https://github.com/TanukiMa/g-i-t/commit/05726294d9f215838b4273261a49fc1feccde582)
+
 ## 2026-10-02 12:56 JST — 1 件のサイトが変更
 
 - [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
