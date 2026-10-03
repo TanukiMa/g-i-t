@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-03 09:56 JST — 1 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+
+コミット: [`6c2b787`](https://github.com/TanukiMa/g-i-t/commit/6c2b787c52a41fc2c7f64f053cdc15335dde5901)
+
 ## 2026-10-03 08:56 JST — 2 件のサイトが変更
 
 - [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
