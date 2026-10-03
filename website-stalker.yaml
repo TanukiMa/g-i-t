@@ -166,3 +166,6 @@ sites:
   - url: https://www.mhlw.go.jp/
     headers: *ua
     editors: *default_editors
+  - url: https://www.pmda.go.jp/
+    headers: *ua
+    editors: *default_editors
