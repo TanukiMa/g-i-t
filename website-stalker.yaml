@@ -48,6 +48,7 @@ sites:
   - url: https://gemmed.ghc-j.com/
     headers: *ua
     editors:
+      - html_sanitize
       # Rotating ad banners (all wrapped in <aside>, plus one bare
       # .header-banner div up top) swap images/links on every request,
       # which made every fetch look like a change regardless of whether
