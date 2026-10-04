@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-04 18:56 JST — 1 件のサイトが変更
+
+- [https://www.pmda.go.jp/safety/info-services/ivd/0008.html](https://www.pmda.go.jp/safety/info-services/ivd/0008.html)
+
+コミット: [`aa0dced`](https://github.com/TanukiMa/g-i-t/commit/aa0dced00d9142bef4bee6218052537bcbbce27e)
+
 ## 2026-10-04 17:56 JST — 1 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
