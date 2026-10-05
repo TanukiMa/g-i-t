@@ -6,6 +6,14 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-05 11:28 JST — 3 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+- [https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html](https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/properly-use-alert/0004.html)
+
+コミット: [`f91f324`](https://github.com/TanukiMa/g-i-t/commit/f91f3240d2c1ea6b0734906fcd0bccd230ba3fc6)
+
 ## 2026-10-05 10:56 JST — 4 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
