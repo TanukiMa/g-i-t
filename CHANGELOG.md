@@ -6,6 +6,20 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-13 21:16 JST — 9 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/downloadMenu/)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_01.html)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_04.html)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`0f7f0c2`](https://github.com/TanukiMa/g-i-t/commit/0f7f0c272173484ec39165c27d7028afe7d47065)
+
 ## 2026-10-13 13:00 JST — 8 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
