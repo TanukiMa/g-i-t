@@ -6,6 +6,13 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-17 20:14 JST — 2 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`6e87476`](https://github.com/TanukiMa/g-i-t/commit/6e87476af7d095d9e2d34fad15545fee4ac6eb16)
+
 ## 2026-10-17 15:18 JST — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
