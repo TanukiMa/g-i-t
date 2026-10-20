@@ -6,6 +6,17 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-20 22:55 JST — 6 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+- [https://www.naika.or.jp/nintei/](https://www.naika.or.jp/nintei/)
+
+コミット: [`a9daa85`](https://github.com/TanukiMa/g-i-t/commit/a9daa85395f40303a666b924bab26b4e95038f45)
+
 ## 2026-10-20 16:58 JST — 8 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
