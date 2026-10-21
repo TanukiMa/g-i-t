@@ -6,6 +6,16 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-21 11:06 JST — 5 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`4615266`](https://github.com/TanukiMa/g-i-t/commit/4615266b135c0bd39e2c47dcd0d1b3bbcc2c86d3)
+
 ## 2026-10-20 22:55 JST — 6 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
