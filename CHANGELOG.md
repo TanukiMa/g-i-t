@@ -6,6 +6,14 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-23 22:53 JST — 3 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`b8c3c77`](https://github.com/TanukiMa/g-i-t/commit/b8c3c776e7b6d622a32e824a6f96ee679178a369)
+
 ## 2026-10-23 17:00 JST — 4 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
