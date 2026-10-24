@@ -6,6 +6,16 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-24 11:03 JST — 5 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`ea71259`](https://github.com/TanukiMa/g-i-t/commit/ea71259adcc3f9327525ae2130bde0f31718aba7)
+
 ## 2026-10-23 22:53 JST — 3 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
