@@ -6,6 +6,19 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-10-26 10:51 JST — 8 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://jsnm.org/useful/guidelines/](https://jsnm.org/useful/guidelines/)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`b9d1280`](https://github.com/TanukiMa/g-i-t/commit/b9d12802feee42dc7fafe8a0e019b9108590e4fc)
+
 ## 2026-10-25 21:49 JST — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
