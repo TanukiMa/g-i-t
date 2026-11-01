@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-01 11:41 JST — 1 件のサイトが変更
+
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+
+コミット: [`4121d31`](https://github.com/TanukiMa/g-i-t/commit/4121d31f926a5981f082c8dea0a5cf27a8cc9dee)
+
 ## 2026-11-01 00:33 JST — 1 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
