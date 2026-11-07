@@ -6,6 +6,14 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-07 19:45 JST — 3 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`e398f62`](https://github.com/TanukiMa/g-i-t/commit/e398f62027738e596cf343113f597436213cfc6c)
+
 ## 2026-11-07 12:19 JST — 4 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
