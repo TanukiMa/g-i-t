@@ -6,6 +6,19 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-13 20:40 JST — 8 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/)
+- [https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4](https://www.chemotherapy.or.jp/modules/newslist/index.php?content_id=4)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/newpage_67729.html](https://www.mhlw.go.jp/stf/newpage_67729.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+
+コミット: [`3ee6df4`](https://github.com/TanukiMa/g-i-t/commit/3ee6df448822848e3bea70701045c713decefa5f)
+
 ## 2026-11-13 12:42 JST — 10 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
