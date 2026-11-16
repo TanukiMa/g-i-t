@@ -6,6 +6,16 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-16 21:09 JST — 5 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1](https://www.jibika.or.jp/modules/guidelines/index.php?content_id=1)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`3f45916`](https://github.com/TanukiMa/g-i-t/commit/3f45916db91d20f4394b0ef4c7ebfda3e61f165e)
+
 ## 2026-11-16 12:17 JST — 7 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
