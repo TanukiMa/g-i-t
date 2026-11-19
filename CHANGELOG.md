@@ -6,6 +6,16 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-19 23:01 JST — 5 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+
+コミット: [`81736e9`](https://github.com/TanukiMa/g-i-t/commit/81736e9097eae825472c40d0fe91d5f2779d50e0)
+
 ## 2026-11-19 13:37 JST — 8 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
