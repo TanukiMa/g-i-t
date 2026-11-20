@@ -6,6 +6,21 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-20 22:41 JST — 10 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://shinryohoshu.mhlw.go.jp/shinryohoshu/](https://shinryohoshu.mhlw.go.jp/shinryohoshu/)
+- [https://www.jami.jp/](https://www.jami.jp/)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+- [https://www.naika.or.jp/nintei/](https://www.naika.or.jp/nintei/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`4691a21`](https://github.com/TanukiMa/g-i-t/commit/4691a2150b46f5eb818609b27371c9e59c2a2dbc)
+
 ## 2026-11-20 13:26 JST — 7 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
