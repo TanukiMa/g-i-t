@@ -6,6 +6,12 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-22 21:03 JST — 1 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+
+コミット: [`4111c0c`](https://github.com/TanukiMa/g-i-t/commit/4111c0c31aa631d57aa401c4960e71d5395054c9)
+
 ## 2026-11-22 12:34 JST — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
