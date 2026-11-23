@@ -6,6 +6,13 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-24 00:28 JST — 2 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`27b9739`](https://github.com/TanukiMa/g-i-t/commit/27b9739c0308a7cf41be6d8a47f970c5753cce07)
+
 ## 2026-11-23 13:08 JST — 2 件のサイトが変更
 
 - [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
