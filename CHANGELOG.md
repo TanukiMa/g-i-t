@@ -6,6 +6,21 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-24 16:09 JST — 10 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/kihonmasta_07.html)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+- [https://www.jami.jp/](https://www.jami.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html)
+- [https://www.naika.or.jp/](https://www.naika.or.jp/)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+- [https://www.radiology.jp/guideline](https://www.radiology.jp/guideline)
+
+コミット: [`8e3799a`](https://github.com/TanukiMa/g-i-t/commit/8e3799a2d88e9798d65a6a2f09861fd28a14f640)
+
 ## 2026-11-24 00:28 JST — 2 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
