@@ -6,6 +6,21 @@
 -->
 
 <!-- ENTRIES:START -->
+## 2026-11-26 14:33 JST — 10 件のサイトが変更
+
+- [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
+- [https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html](https://www.hpdx.or.jp/seikyushiharai/tensuhyo/kihonmasta/r06kaiteijoho.html)
+- [https://www.jami.jp/](https://www.jami.jp/)
+- [https://www.jsaweb.jp/](https://www.jsaweb.jp/)
+- [https://www.jssoc.or.jp/](https://www.jssoc.or.jp/)
+- [https://www.mhlw.go.jp/index.html](https://www.mhlw.go.jp/index.html)
+- [https://www.mhlw.go.jp/stf/new-info/](https://www.mhlw.go.jp/stf/new-info/)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150864_135_130.html)
+- [https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/topics_150873_139_140.html)
+- [https://www.pmda.go.jp/](https://www.pmda.go.jp/)
+
+コミット: [`34705dd`](https://github.com/TanukiMa/g-i-t/commit/34705dd620ba3ee76a0ab77bdd963a9ac481662c)
+
 ## 2026-11-26 01:12 JST — 8 件のサイトが変更
 
 - [https://gemmed.ghc-j.com/](https://gemmed.ghc-j.com/)
